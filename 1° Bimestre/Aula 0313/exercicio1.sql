@@ -1,6 +1,6 @@
-create database exercicio1; -- Cria novo banco de dados 
+create database exercicio1 -- Cria novo banco de dados 
 
-use exercicio1; -- Seleciona o banco de dados exercicio1
+use exercicio1 -- Seleciona o banco de dados exercicio1
 
 create table pet( -- Cria tabela = pet
     NumRegistro int, -- Define uma coluna para armazenar o número de registro do animal

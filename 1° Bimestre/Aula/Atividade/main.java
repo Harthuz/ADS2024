@@ -3,6 +3,7 @@ import javax.swing.JOptionPane;
 public class main {
     public static void main(String[] args) {
         calculadora calc = new calculadora();
+        double valores[] = new double[2];
 
         int op;
 
@@ -17,7 +18,6 @@ public class main {
                     JOptionPane.showMessageDialog(null, calc.getResult());
                     break;
                 case 2:
-                    double valores[] = new double[2];
                     for(int i=0;i<2;i++){
                         valores[i] = Double.parseDouble(JOptionPane.showInputDialog("Digite o " +(i+1) +"° valor:"));
                     }
@@ -29,7 +29,11 @@ public class main {
                     JOptionPane.showMessageDialog(null, resultado);
                     break;
                 case 4:
-                    
+                    for(int i=0;i<2;i++){
+                        valores[i] = Double.parseDouble(JOptionPane.showInputDialog("Digite o " +(i+1) +"° valor:"));
+                    }
+                    resultado = calc.dividir(valores[0], valores[1]);
+                    JOptionPane.showMessageDialog(null, resultado);
                     break;                    
                 
                 default:

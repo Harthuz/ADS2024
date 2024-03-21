@@ -62,4 +62,9 @@ public class calculadora {
         result = valores[0] * valores[1];
         return result;
     }
+
+    public Double dividir(Double val1, Double val2){
+        result = val1 / val2;
+        return result;
+    }
 }

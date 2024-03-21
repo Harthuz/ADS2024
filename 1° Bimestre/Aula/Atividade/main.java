@@ -25,7 +25,8 @@ public class main {
                     JOptionPane.showMessageDialog(null, calc.getResult());
                     break;
                 case 3:
-                    
+                    Double resultado = calc.multiplicar();
+                    JOptionPane.showMessageDialog(null, resultado);
                     break;
                 case 4:
                     

@@ -52,4 +52,14 @@ public class calculadora {
         result = 0.0;
         result = val1 - val2;
     }
+
+    public Double multiplicar(){
+        result = 0.0;
+        double valores[] = new double[2];
+        for(int i=0;i<2;i++){
+            valores[i] = Double.parseDouble(JOptionPane.showInputDialog("Digite o " +(i+1) +"° valor:"));
+        }
+        result = valores[0] * valores[1];
+        return result;
+    }
 }

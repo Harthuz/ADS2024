@@ -6,9 +6,8 @@ public class main {
 
         int op;
 
-        op = Integer.parseInt(JOptionPane.showInputDialog("Digite uma das seguintes opções: \n 1 - Soma \n 2 - Subtração \n 3 - Multiplicação \n  4 - Divisão \n 0 - Sair"));
-
         do{
+            op = Integer.parseInt(JOptionPane.showInputDialog("Digite uma das seguintes opções: \n 1 - Soma \n 2 - Subtração \n 3 - Multiplicação \n 4 - Divisão \n 0 - Sair"));
             switch (op) {
                 case 0:
                     JOptionPane.showMessageDialog(null, "Finalizando programa");
@@ -18,7 +17,11 @@ public class main {
                     JOptionPane.showMessageDialog(null, calc.getResult());
                     break;
                 case 2:
-                    calc.subtrair();
+                    double valores[] = new double[2];
+                    for(int i=0;i<2;i++){
+                        valores[i] = Double.parseDouble(JOptionPane.showInputDialog("Digite o " +(i+1) +"° valor:"));
+                    }
+                    calc.subtrair(valores[0], valores[1]);
                     JOptionPane.showMessageDialog(null, calc.getResult());
                     break;
                 case 3:

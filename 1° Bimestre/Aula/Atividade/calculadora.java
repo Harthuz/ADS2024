@@ -40,23 +40,16 @@ public class calculadora {
     }
 
     public void somar(){
+        result = 0.0;
         double valores[] = new double[2];
         for(int i=0;i<2;i++){
-            valores[i] = Double.parseDouble(JOptionPane.showInputDialog("Digite o " +i+1 +"° valor:"));
+            valores[i] = Double.parseDouble(JOptionPane.showInputDialog("Digite o " +(i+1) +"° valor:"));
             setNum1(result+=valores[i]);
         }
     }
 
-    public void subtrair(){
-        double valores[] = new double[2];
-        for(int i=0;i<2;i++){
-            if(i==0){
-                valores[i] = Double.parseDouble(JOptionPane.showInputDialog("Digite o " +(i+1) +"° valor:"));
-                setNum1(result=valores[i]);
-            }else{
-                valores[i] = Double.parseDouble(JOptionPane.showInputDialog("Digite o " +(i+1) +"° valor:"));
-                setNum1(result=result-valores[i]);
-            }
-        }
+    public void subtrair(Double val1, Double val2){
+        result = 0.0;
+        result = val1 - val2;
     }
 }

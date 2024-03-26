@@ -39,6 +39,8 @@ public class calculadora {
         this.result = result;
     }
 
+    // Método operação de soma
+    // Sem parâmetros, sem retorno
     public void somar(){
         result = 0.0;
         double valores[] = new double[2];
@@ -48,11 +50,15 @@ public class calculadora {
         }
     }
 
+    // Método operação de subtração
+    // Com parâmetros, sem retorno
     public void subtrair(Double val1, Double val2){
         result = 0.0;
         result = val1 - val2;
     }
 
+    // Método operação de multiplicação
+    // Sem parâmetros, com retorno
     public Double multiplicar(){
         result = 0.0;
         double valores[] = new double[2];
@@ -63,6 +69,8 @@ public class calculadora {
         return result;
     }
 
+    // Método operação de divisão
+    // Com parâmetros, com retorno
     public Double dividir(Double val1, Double val2){
         result = val1 / val2;
         return result;

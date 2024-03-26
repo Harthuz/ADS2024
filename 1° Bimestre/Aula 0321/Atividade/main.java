@@ -14,25 +14,25 @@ public class main {
                     JOptionPane.showMessageDialog(null, "Finalizando programa");
                     break;
                 case 1:
-                    calc.somar();
+                    calc.somar(); // Chamando o método somar() da calculadora
                     JOptionPane.showMessageDialog(null, calc.getResult());
                     break;
                 case 2:
                     for(int i=0;i<2;i++){
                         valores[i] = Double.parseDouble(JOptionPane.showInputDialog("Digite o " +(i+1) +"° valor:"));
                     }
-                    calc.subtrair(valores[0], valores[1]);
+                    calc.subtrair(valores[0], valores[1]); // Chamando o método subtrair() da calculadora com parâmetros
                     JOptionPane.showMessageDialog(null, calc.getResult());
                     break;
                 case 3:
-                    Double resultado = calc.multiplicar();
+                    Double resultado = calc.multiplicar(); // Chamando o método multiplicar() da calculadora com retorno
                     JOptionPane.showMessageDialog(null, resultado);
                     break;
                 case 4:
                     for(int i=0;i<2;i++){
                         valores[i] = Double.parseDouble(JOptionPane.showInputDialog("Digite o " +(i+1) +"° valor:"));
                     }
-                    resultado = calc.dividir(valores[0], valores[1]);
+                    resultado = calc.dividir(valores[0], valores[1]); // Chamando o método dividir() da calculadora com parâmetros e retorno
                     JOptionPane.showMessageDialog(null, resultado);
                     break;                    
                 

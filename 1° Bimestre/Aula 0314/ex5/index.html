@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soma dos quadrados</title>
+    <style>
+        form{
+            display:grid;
+            justify-content: center;
+            align-items: center;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .texto{
+            text-align: center;
+        }
+
+        .submit-btn {
+            width: 100%;
+            background-color: #4285f4;
+            color: #ffffff;
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .submit-btn:hover {
+            background-color: #3367d6;
+        }
+    </style>
+</head>
+<body>
+    <form action="quadrados.php" method="post">
+        <div class="texto">Digite 3 números:</div> <br>
+        <input type="number" name="num1" placeholder="1° Número"> <br>
+        <input type="number" name="num2" placeholder="2° Número"> <br>
+        <input type="number" name="num3" placeholder="3° Número"> <br>
+        <input type="submit" class="submit-btn">
+    </form>
+</body>
+</html>

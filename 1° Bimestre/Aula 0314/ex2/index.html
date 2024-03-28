@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desconto</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 300px;
+            border-radius: 8px;
+            padding: 10px 10px;
+        }
+        .form-label {
+            margin: 5px auto;
+        }
+        .form-input {
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .form-submit {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            font-size: 11pt;
+            padding: 10px 12px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+        .form-submit:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <form action="desconto.php" method="post">
+            <p class="form-label">Digite o preço do produto em reais:</p>
+            <input type="text" name="preco" class="form-input">
+            <p class="form-label">Digite a porcentagem de desconto:</p>
+            <input type="text" name="porc" class="form-input">
+            <input type="submit" class="form-submit" value="Calcular Desconto">
+        </form>
+
+        <p style="color: #007bff;"></p>
+    </div>
+</body>
+</html>
